@@ -46,6 +46,12 @@ namespace FunStop.Classes
             List<ClsParams> lst = new List<ClsParams>();
             Conn.EjecutarSP("Sp_CreateBackup", ref lst);
         }
+
+        public void ResetTables()
+        {
+            List<ClsParams> lst = new List<ClsParams>();
+            Conn.EjecutarSP("Sp_ResetTicketTable", ref lst);
+        }
         #endregion
 
 

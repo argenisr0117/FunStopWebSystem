@@ -550,8 +550,64 @@
           <PaddingRight>1pt</PaddingRight>
         </Style>
       </Textbox>
+      <Line Name="Line3">
+        <Top>5.32976cm</Top>
+        <Height>0cm</Height>
+        <Width>7.15349cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nota: Si usted excede el tiempo pagado deberá pagar $</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!ExcMinuteRate.Value</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> por cada minuto excedido.</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>1.67819in</Top>
+        <Left>0.31433cm</Left>
+        <Height>0.3507in</Height>
+        <Width>2.54025in</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>1pt</PaddingLeft>
+          <PaddingRight>1pt</PaddingRight>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>4.44182cm</Height>
+    <Height>5.4356cm</Height>
     <Style />
   </Body>
   <Width>7.15349cm</Width>

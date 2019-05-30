@@ -35,5 +35,12 @@ namespace FunStop
             string Message = "alert('Backup realizado satisfactoriamente')";
             ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", Message, true);
         }
+
+        protected void reseteoBtn_Click(object sender, EventArgs e)
+        {
+            U.ResetTables();
+            string Message = "alert('Backup realizado satisfactoriamente')";
+            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", Message, true);
+        }
     }
 }

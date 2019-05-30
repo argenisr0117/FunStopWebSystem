@@ -65,7 +65,7 @@
                         </ContentTemplate>
                     </asp:UpdatePanel>
                     <li class="nav-item">
-                        <asp:LinkButton Text="Reseteo" runat="server" ID="reseteoBtn" CausesValidation="false" CssClass="nav-link text-white h6"> <i class="fa fa-eraser"></i> Reseteo</asp:LinkButton>
+                        <asp:LinkButton Text="Reseteo" runat="server" ID="reseteoBtn" OnClick="reseteoBtn_Click" CausesValidation="false" OnClientClick="return confirm('Desea resetear tablas?');" CssClass="nav-link text-white h6"> <i class="fa fa-eraser"></i> Reseteo</asp:LinkButton>
                     </li>
 
                     <li class="nav-item">
