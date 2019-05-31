@@ -52,26 +52,32 @@
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link text-white h6" runat="server" href="~/Caja"><i class="fa fa-money"></i>Caja</a>
+                        <a class="nav-link text-white h6" runat="server" href="~/Caja">Caja <i class="fa fa-money"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white h6" id="menucaja" runat="server" href="~/Pista"><i class="fa fa-car"></i>Pista</a>
+                        <a class="nav-link text-white h6" id="menucaja" runat="server" href="~/Pista">Pista <i class="fa fa-car"></i></a>
                     </li>
                     <asp:UpdatePanel runat="server">
                         <ContentTemplate>
-                            <li class="nav-item">
-                                <asp:LinkButton Text="Backup" runat="server" ID="backupBtn" OnClick="backupBtn_Click" OnClientClick="return confirm('Desea realizar backup?');" CausesValidation="false" CssClass="nav-link text-white h6"> <i class="fa fa-database"></i> Backup</asp:LinkButton>
-                            </li>
+                            <li class="nav-item"></li>
                         </ContentTemplate>
                     </asp:UpdatePanel>
-                    <li class="nav-item">
-                        <asp:LinkButton Text="Reseteo" runat="server" ID="reseteoBtn" OnClick="reseteoBtn_Click" CausesValidation="false" OnClientClick="return confirm('Desea resetear tablas?');" CssClass="nav-link text-white h6"> <i class="fa fa-eraser"></i> Reseteo</asp:LinkButton>
-                    </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white h6" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilidades
+                        <i class="fa fa-chevron-down"></i></a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <asp:LinkButton Text="Backup" runat="server" ID="backupBtn" OnClick="backupBtn_Click" OnClientClick="return confirm('Desea realizar backup?');" CausesValidation="false" CssClass="nav-link text-white h6">Backup <i class="fa fa-database"></i> </asp:LinkButton>
 
+                            <asp:LinkButton Text="Reseteo" runat="server" ID="reseteoBtn" OnClick="reseteoBtn_Click" CausesValidation="false" OnClientClick="return confirm('Desea resetear tablas?');" CssClass="nav-link text-white h6">Reseteo <i class="fa fa-eraser"></i> </asp:LinkButton>
+
+                            <div class="dropdown-divider"></div>
+                            <%--<a class="dropdown-item" href="#">Something else here</a>--%>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <asp:Button ID="LogoutBtn" runat="server" CausesValidation="false" Text="Salir" CssClass="btn btn-outline-danger font-weight-bolder" OnClick="LogoutBtn_Click" UseSubmitBehavior="False" />
                     </li>
-
                 </ul>
             </div>
         </nav>

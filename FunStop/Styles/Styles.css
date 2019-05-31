@@ -344,3 +344,8 @@ nav.fill ul li a {
     nav.stroke ul li a:hover:after {
         width: 100%;
     }
+
+.dropdown-toggle::after {
+    border-right: 0 solid transparent!important;
+    border-left: 0 solid transparent!important;
+}

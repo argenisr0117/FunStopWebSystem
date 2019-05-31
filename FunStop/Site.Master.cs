@@ -39,7 +39,7 @@ namespace FunStop
         protected void reseteoBtn_Click(object sender, EventArgs e)
         {
             U.ResetTables();
-            string Message = "alert('Backup realizado satisfactoriamente')";
+            string Message = "alert('Se han reseteado las tablas satisfactoriamente')";
             ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", Message, true);
         }
     }
