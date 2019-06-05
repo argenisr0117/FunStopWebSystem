@@ -10,60 +10,69 @@
 namespace FunStop {
     
     
-    public partial class SiteMaster {
+    public partial class ReporteCaja {
         
         /// <summary>
-        /// menucaja control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor menucaja;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// backupBtn control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton backupBtn;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// reseteoBtn control.
+        /// desdeDtp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton reseteoBtn;
+        protected global::System.Web.UI.WebControls.TextBox desdeDtp;
         
         /// <summary>
-        /// reportecaj control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor reportecaj;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// LogoutBtn control.
+        /// hastaDtp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogoutBtn;
+        protected global::System.Web.UI.WebControls.TextBox hastaDtp;
         
         /// <summary>
-        /// MainContent control.
+        /// reporteBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button reporteBtn;
+        
+        /// <summary>
+        /// ReportViewer1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Microsoft.Reporting.WebForms.ReportViewer ReportViewer1;
     }
 }

@@ -125,6 +125,7 @@
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
     <Content Include="Report.aspx" />
+    <Content Include="ReporteCaja.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -238,6 +239,9 @@
     <Compile Include="ClsDBConn.cs" />
     <Compile Include="ClsGlobal.cs" />
     <Compile Include="ClsParams.cs" />
+    <Compile Include="FunStopDataSet.cs">
+      <DependentUpon>FunStopDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FunStopDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -279,6 +283,13 @@
     </Compile>
     <Compile Include="Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCaja.aspx.cs">
+      <DependentUpon>ReporteCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteCaja.aspx.designer.cs">
+      <DependentUpon>ReporteCaja.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -324,6 +335,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\CierreCaja.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

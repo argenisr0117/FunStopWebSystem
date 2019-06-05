@@ -73,6 +73,8 @@
 
                             <div class="dropdown-divider"></div>
                             <%--<a class="dropdown-item" href="#">Something else here</a>--%>
+                            <a class="nav-link text-white h6" id="reportecaj" runat="server" href="~/ReporteCaja">Reporte Caja <i class="fa fa-paper-plane"></i></a>
+
                         </div>
                     </li>
                     <li class="nav-item">

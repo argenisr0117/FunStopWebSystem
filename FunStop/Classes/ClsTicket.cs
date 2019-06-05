@@ -21,6 +21,9 @@ namespace FunStop.Classes
         public decimal Total { get; set; }
         public int UserID { get; set; }
         public int CarID { get; set; }
+        public DateTime Desde { get; set; }
+        public DateTime Hasta { get; set; }
+
 
 
 
@@ -107,6 +110,24 @@ namespace FunStop.Classes
             Conn.EjecutarSP("Sp_CompleteTicket", ref lst);
             Msj = Convert.ToInt32(lst[0].Valor);
             return Msj;
+        }
+
+        public DataTable GetResumeReport()
+        {
+            DataTable dt = new DataTable();
+            List<ClsParams> lst = new List<ClsParams>();
+            lst.Add(new ClsParams("@Desde", Desde));
+            lst.Add(new ClsParams("@Hasta", Hasta));
+            return dt = Conn.Listado("Sp_ReportResumido", lst);
+        }
+
+        public DataTable GetDetailsReport()
+        {
+            DataTable dt = new DataTable();
+            List<ClsParams> lst = new List<ClsParams>();
+            lst.Add(new ClsParams("@Desde", Desde));
+            lst.Add(new ClsParams("@Hasta", Hasta));
+            return dt = Conn.Listado("Sp_ReportDetallado", lst);
         }
         #endregion
     }

@@ -13,12 +13,12 @@ namespace FunStop
         Classes.ClsUser U = new Classes.ClsUser();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (ClsGlobal.UserID == 0)
-            {
-                Response.Redirect("Login.aspx");
+            //if (ClsGlobal.UserID == 0)
+            //{
+            //    Response.Redirect("Login.aspx");
                 
 
-            }
+            //}
             //menucaja.Visible = false;
         }
 
