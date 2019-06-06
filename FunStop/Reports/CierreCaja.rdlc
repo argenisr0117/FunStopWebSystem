@@ -173,7 +173,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Tickets.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>#,0;(#,0)</Format>
+                                <Language>es-DO</Language>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -205,7 +208,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Total.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>n2</Format>
+                                <Language>es-DO</Language>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -278,6 +284,8 @@
                               <Value>=Sum(Fields!Tickets.Value)</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                                <Language>es-DO</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -315,6 +323,8 @@
                               <Value>=Sum(Fields!Total.Value)</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
+                                <Format>#,0.00;(#,0.00)</Format>
+                                <Language>es-DO</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -338,7 +348,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -757,7 +766,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TrackTime.Value</Value>
-                              <Style />
+                              <Style>
+                                <Language>es-DO</Language>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -789,7 +800,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Total.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>#,0.00;(#,0.00)</Format>
+                                <Language>es-DO</Language>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -860,6 +874,7 @@
                               <Value>=Count(Fields!Ticket.Value)</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
+                                <Language>es-DO</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -993,6 +1008,8 @@
                               <Value>=Sum(Fields!Total.Value)</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
+                                <Format>#,0.00;(#,0.00)</Format>
+                                <Language>es-DO</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
